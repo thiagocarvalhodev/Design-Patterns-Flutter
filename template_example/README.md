@@ -15,7 +15,7 @@ Este projeto foi desenvolvido utilizando as seguintes dependências externas:
 - [build_runner](https://pub.dev/packages/build_runner)
 - [json_serializable](https://pub.dev/packages/json_serializable)
 
-Para obter todas as depências externas, rodar `flutter pub get`
+Para obter todas as dependências externas, rodar `flutter pub get`
 
 Para manter os packages atualizados, rodar `flutter pub upgrade`.
 
@@ -30,7 +30,7 @@ A organização de pastas segue o padrão:
 ### Modules: 
 Cada módulo da aplicação terá sua própria pasta.
 
-Cada `Module` terá seus respectivos submódulos. Estes se caractirezam por:
+Cada `Module` terá seus respectivos submódulos. Estes se caracterizam pelas seguinte estrutura de pastas:
 
 ### Provider:
 Classe responsável pela injeção de depência de cada módulo.
