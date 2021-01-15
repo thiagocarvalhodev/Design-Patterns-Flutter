@@ -32,8 +32,11 @@ Cada módulo da aplicação terá sua própria pasta.
 
 Cada `Module` terá seus respectivos submódulos. Estes se caractirezam por:
 
+### Provider:
+Classe responsável pela injeção de depência de cada módulo.
+
 ### Pages: 
-ficará aqui nossa View. Toda a UI deverá vir nessa pasta;
+Ficará aqui nossa View. Toda a UI deverá vir nessa pasta;
 
 ### Controller: 
 Nossa ViewModel. O `Controller` é responsável por adaptar os dados do nosso `UseCases` para nossa UI'
@@ -46,6 +49,9 @@ Nossa camada para tratar os dados externos da nossa regra de negócios, este se 
 
 ### Services: 
 unicamente responsável por fazer a comunicação com nosso serviço externo.
+
+### Widget:
+Um módulo poderá ter um componente próprio que tem uso excluiso neste módulo e que se repete ao longo do mesmo. Nesse caso, este componente deverá vir nessa pasta
 
 Fora de `Modules`, temos o módulo `Shared` que são todas as classes que podem ser chamadas em qualquer lugar do app, comumente utilizada para Utilidades, constantes e componentes.
 
