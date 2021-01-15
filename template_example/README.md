@@ -2,7 +2,7 @@
 
 Projeto para o desafio técnico da equipe Toro.
 
-## Como rodar o projeto:
+## Dependências externas
 
 Este projeto foi desenvolvido utilizando as seguintes dependências externas:
 
@@ -14,6 +14,8 @@ Este projeto foi desenvolvido utilizando as seguintes dependências externas:
 - [provider](https://pub.dev/packages/provider)
 - [build_runner](https://pub.dev/packages/build_runner)
 - [json_serializable](https://pub.dev/packages/json_serializable)
+
+## Para rodar o projeto
 
 Para obter todas as dependências externas, rodar `flutter pub get`
 
@@ -51,7 +53,7 @@ Nossa camada para tratar os dados externos da nossa regra de negócios, este se 
 unicamente responsável por fazer a comunicação com nosso serviço externo.
 
 ### Widget:
-Um módulo poderá ter um componente próprio que tem uso excluiso neste módulo e que se repete ao longo do mesmo. Nesse caso, este componente deverá vir nessa pasta
+Um módulo poderá ter um componente próprio que tem uso exclusivo neste módulo e que se repete ao longo do mesmo. Nesse caso, este componente deverá vir nessa pasta
 
 Fora de `Modules`, temos o módulo `Shared` que são todas as classes que podem ser chamadas em qualquer lugar do app, comumente utilizada para Utilidades, constantes e componentes.
 
