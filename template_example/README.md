@@ -32,15 +32,20 @@ Cada módulo da aplicação terá sua própria pasta.
 
 Cada `Module` terá seus respectivos submódulos. Estes se caractirezam por:
 
-`Pages`: ficará aqui nossa View. Toda a UI deverá vir nessa pasta;
+### Pages: 
+ficará aqui nossa View. Toda a UI deverá vir nessa pasta;
 
-`Controller`: Nossa ViewModel. O `Controller` é responsável por adaptar os dados do nosso `UseCases` para nossa UI'
+### Controller: 
+Nossa ViewModel. O `Controller` é responsável por adaptar os dados do nosso `UseCases` para nossa UI'
 
-`UseCases`: as regras da aplicação. Este terá a responsabilidade de comunicar-se com nossa regra de negócios, `Repositories`;
+### UseCases: 
+as regras da aplicação. Este terá a responsabilidade de comunicar-se com nossa regra de negócios, `Repositories`;
 
-`Repositories`: Nossa camada para tratar os dados externos da nossa regra de negócios, este se comunica com nossa fonte de dados `Services`;
+### Repositories: 
+Nossa camada para tratar os dados externos da nossa regra de negócios, este se comunica com nossa fonte de dados `Services`;
 
-`Services`: unicamente responsável por fazer a comunicação com nosso serviço externo.
+### Services: 
+unicamente responsável por fazer a comunicação com nosso serviço externo.
 
 Fora de `Modules`, temos o módulo `Shared` que são todas as classes que podem ser chamadas em qualquer lugar do app, comumente utilizada para Utilidades, constantes e componentes.
 
