@@ -1,12 +1,48 @@
-# template_example
+# desafio_toro
 
-A new Flutter project.
+Projeto para o desafio técnico da equipe Toro.
 
-## Getting Started
+## Como rodar o projeto:
 
-This project is a starting point for a Flutter application.
+Este projeto foi desenvolvido utilizando as seguintes dependências externas:
 
-A few resources to get you started if this is your first Flutter project:
+- [flutter_svg](https://pub.dev/packages/flutter_svg)
+- [http](https://pub.dev/packages/http)
+- [json_annotation](https://pub.dev/packages/json_annotation)
+- [rxdart](https://pub.dev/packages/rxdart)
+- [mask_text_input_formatter](https://pub.dev/packages/mask_text_input_formatter)
+- [provider](https://pub.dev/packages/provider)
+- [build_runner](https://pub.dev/packages/build_runner)
+- [json_serializable](https://pub.dev/packages/json_serializable)
+
+Para obter todas as depências externas, rodar `flutter pub get`
+
+Para manter os packages atualizados, rodar `flutter pub upgrade`.
+
+Para rodar o projeto: utilizar o comando `flutter pub run` no nível do projeto (pasta desafio_toro).
+
+## Arquitetura
+
+O projeto foi desenvolvido seguindo o padrão `BlocPattern`, tendo sua injeção de dependências feita pelo `Provider`.
+
+A organização de pastas segue o padrão:
+
+`Modules`: Cada módulo da aplicação terá sua própria pasta.
+
+Cada `Module` terá seus respectivos submódulos. Estes se caractirezam por:
+
+`Pages`: ficará aqui nossa View. Toda a UI deverá vir nessa pasta;
+
+`Controller`: Nossa ViewModel. O `Controller` é responsável por adaptar os dados do nosso `UseCases` para nossa UI'
+
+`UseCases`: as regras da aplicação. Este terá a responsabilidade de comunicar-se com nossa regra de negócios, `Repositories`;
+
+`Repositories`: Nossa camada para tratar os dados externos da nossa regra de negócios, este se comunica com nossa fonte de dados `Services`;
+
+`Services`: unicamente responsável por fazer a comunicação com nosso serviço externo.
+
+Fora de `Modules`, temos o módulo `Shared` que são todas as classes que podem ser chamadas em qualquer lugar do app, comumente utilizada para Utilidades, constantes e componentes.
+
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
