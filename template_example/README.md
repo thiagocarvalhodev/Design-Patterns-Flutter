@@ -27,7 +27,7 @@ O projeto foi desenvolvido seguindo o padrão `BlocPattern`, tendo sua injeção
 
 A organização de pastas segue o padrão:
 
-`Modules`: Cada módulo da aplicação terá sua própria pasta.
+# Modules: Cada módulo da aplicação terá sua própria pasta.
 
 Cada `Module` terá seus respectivos submódulos. Estes se caractirezam por:
 
